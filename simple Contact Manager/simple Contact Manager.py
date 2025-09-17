@@ -2,8 +2,8 @@ def load_contacts():
     contacts = []
     try:
         with open("/home/user/Desktop/Python/file handling/simple Contact Manager/contacts.txt", "r") as f:
-            for line in f:
-                name, phone, email = line.strip().split("|")
+            for i in f:
+                name, phone, email = i.strip().split("|")
                 contacts.append({"name": name, "phone": phone, "email": email})
     except FileNotFoundError:
         pass  

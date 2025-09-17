@@ -57,7 +57,7 @@ def main():
         elif choice == "3":
             view_all(credentials)
         elif choice == "4":
-            print("Exiting... Goodbye! 👋")
+            print("Exiting... Goodbye! ")
             break
         else:
             print("Invalid choice, please try again.")
