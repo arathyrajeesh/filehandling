@@ -1,0 +1,10 @@
+What is the capital of France?|Paris
+What is 5 + 3?|8
+What is the largest planet in our solar system?|Jupiter
+Which language is used for web development alongside HTML and CSS?|JavaScript
+What is the capital of India?|New Delhi
+What is the result of 10 * 2?|20
+Who wrote the play 'Romeo and Juliet'?|Shakespeare
+Which animal is known as the King of the Jungle?|Lion
+What is the boiling point of water in Celsius?|100
+Python is developed by which person?|Guido van Rossum
