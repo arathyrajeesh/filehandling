@@ -2,7 +2,6 @@ STUDENT_FILE = "/home/user/Desktop/Python/file handling/Student Marks Record/stu
 
 
 def student_tracker():
-    """Load students from file"""
     student_details = []
     try:
         with open(STUDENT_FILE, "r") as f:
@@ -39,7 +38,6 @@ def add_student(student_details):
     save_item(student_details)
     print(" Student saved successfully!")
     
-    view_all(student_details)
 
 
 def view_all(student_details):
@@ -64,6 +62,7 @@ def top_scorer(student_details):
     if not student_details:
         print(" No students stored yet.")
         return
+    top=max(student_details)
 
 
 def main():

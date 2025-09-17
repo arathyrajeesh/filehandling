@@ -1,3 +1,5 @@
 arathy|10
 adithya|10
 rohini|10
+aswathy|100
+3|100
