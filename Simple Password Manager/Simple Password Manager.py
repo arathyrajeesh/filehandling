@@ -26,12 +26,12 @@ def add_credentials(credentials):
 
 def view_credentials(credentials):
     website = input("Enter website to search: ").lower()
-    found = [c for c in credentials if c["website"].lower() == website]
-    if found:
-        for c in found:
-            print(f"Website: {c['website']}, Username: {c['username']}, Password: {c['password']}")
-    else:
-        print(" No credentials found for that website.")
+    for i in credentials:
+        if i["website"].lower() == website:
+            print(f"Website: {i['website']}, Username: {i['username']}, Password: {i['password']}")
+            return
+    print(" No credentials found for that website.")
+
 
 def view_all(credentials):
     if not credentials:
