@@ -25,15 +25,15 @@ def quiz_game():
     question_number = 1  
 
     print("\n--- Quiz Game ---")
-    for qa in questions:
-        print(f"\nQ{question_number}. {qa['q']}")
+    for i in questions:
+        print(f"\nQ{question_number}. {i['q']}")
         answer = input("Your answer: ").strip()
 
-        if answer.lower() == qa["a"].lower():
+        if answer.lower() == i["a"].lower():
             print("Correct!")
             score += 1
         else:
-            print(f" Wrong! Correct Answer: {qa['a']}")
+            print(f" Wrong! Correct Answer: {i['a']}")
 
         question_number += 1  
 
