@@ -62,7 +62,14 @@ def top_scorer(student_details):
     if not student_details:
         print(" No students stored yet.")
         return
-    top=max(student_details)
+
+    top = student_details[0]   
+    for i in student_details:
+        if i['mark'] > top['mark']:
+            top = i
+
+    print(f" Top Scorer: {top['student_name']} with {top['mark']} marks")
+
 
 
 def main():
