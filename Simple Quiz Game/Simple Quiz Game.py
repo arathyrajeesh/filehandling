@@ -8,8 +8,8 @@ def load_questions():
         with open(QUESTIONS_FILE, "r") as f:
             for line in f:
                 if "|" in line:
-                    q, a = line.strip().split("|")
-                    questions.append({"q": q, "a": a})
+                    question, answer = line.strip().split("|")
+                    questions.append({"question": question, "answer": answer})
     except FileNotFoundError:
         print(" questions.txt file not found!")
     return questions
@@ -26,14 +26,14 @@ def quiz_game():
 
     print("\n--- Quiz Game ---")
     for i in questions:
-        print(f"\nQ{question_number}. {i['q']}")
+        print(f"\nQ{question_number}. {i['question']}")
         answer = input("Your answer: ").strip()
 
-        if answer.lower() == i["a"].lower():
+        if answer.lower() == i["answer"].lower():
             print("Correct!")
             score += 1
         else:
-            print(f" Wrong! Correct Answer: {i['a']}")
+            print(f" Wrong! Correct Answer: {i['answer']}")
 
         question_number += 1  
 
